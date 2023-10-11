@@ -1,3 +1,6 @@
+from dataclasses import dataclass
+
+@dataclass
 class Message(object):
     def __new__(self, text: str) -> bytes:
         if isinstance(text, str) is False:
